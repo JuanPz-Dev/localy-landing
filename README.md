@@ -1,75 +1,221 @@
-# React + TypeScript + Vite
+# 🌴 Localy — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Descubre Cartagena como un local.
 
-Currently, two official plugins are available:
+Localy es una plataforma turística diseñada para conectar viajeros con guías locales certificados, con el objetivo de ofrecer experiencias auténticas, seguras y memorables en Cartagena de Indias, Colombia.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Esta landing page representa la cara digital de la marca y está enfocada en comunicar la propuesta de valor, la confianza de la comunidad y la calidad de las experiencias que ofrece la plataforma.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Descripción del proyecto
 
-## Expanding the ESLint configuration
+Localy nace para cerrar la brecha entre turistas y conocimiento local. La plataforma permite que personas que buscan vivir una experiencia más auténtica puedan encontrar guías locales con experiencia, reseñas reales y recomendaciones de valor.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+La landing page está diseñada como una presentación moderna y premium de la marca, con un enfoque visual orientado a:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- experiencias turísticas locales
+- guías certificados
+- confianza y seguridad
+- valoraciones y reputación
+- turismo auténtico en Cartagena
+- conversión para viajeros y guías
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ✨ Características
 
+- Diseño moderno y premium
+- Layout completamente responsive
+- Hero section con enfoque visual de Cartagena
+- Sección de categorías turísticas
+- Experiencias destacadas
+- Perfiles de guías locales
+- Sistema visual de valoraciones y reputación
+- Sección de cómo funciona la plataforma
+- CTA para viajeros y guías
+- Efectos visuales y hover modernos
+- Navegación adaptada para mobile
+- Implementación en React + TypeScript + Vite
+
+---
+
+## 🛠️ Stack tecnológico
+
+Este proyecto fue desarrollado con:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React
+- ESLint
+
+---
+
+## 📁 Estructura del proyecto
+
+```bash
+localy-landing/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Footer.tsx
+│   │   │   └── Navbar.tsx
+│   │   ├── sections/
+│   │   │   ├── Categories.tsx
+│   │   │   ├── CtaGuides.tsx
+│   │   │   ├── CtaTourists.tsx
+│   │   │   ├── FeaturedExperiences.tsx
+│   │   │   ├── FeaturedGuides.tsx
+│   │   │   ├── Hero.tsx
+│   │   │   ├── HowItWorks.tsx
+│   │   │   ├── Problem.tsx
+│   │   │   ├── Solution.tsx
+│   │   │   ├── Stats.tsx
+│   │   │   ├── Testimonials.tsx
+│   │   │   ├── Trust.tsx
+│   │   │   └── ...
+│   │   └── ui/
+│   │       └── Logo.tsx
+│   ├── data/
+│   │   └── landingData.ts
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   └── vite-env.d.ts
+├── eslint.config.js
+├── index.html
+├── package.json
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+├── README.md
+└── .gitignore
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Instalación
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clona el repositorio:
 
+```bash
+git clone <url-del-repositorio>
 ```
+
+Accede a la carpeta del proyecto:
+
+```bash
+cd localy-landing
+```
+
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+---
+
+## ▶️ Ejecutar en desarrollo
+
+```bash
+npm run dev
+```
+
+Abre la URL que indique Vite en tu navegador, normalmente:
+
+```bash
+http://localhost:5173
+```
+
+---
+
+## 🏗️ Compilar para producción
+
+Genera el build de producción:
+
+```bash
+npm run build
+```
+
+Vista previa del resultado compilado:
+
+```bash
+npm run preview
+```
+
+---
+
+## 🎨 Identidad visual
+
+La marca utiliza una paleta moderna y confiable con tonos que evocan seguridad, tecnología y turismo:
+
+- Azul profundo: confianza y digital
+- Azul brillante: llamados a la acción
+- Blanco y hielo: claridad y premium
+- Ámbar: acento visual y energía
+- Gris neutro: legibilidad y equilibrio
+
+---
+
+## 🧭 Secciones principales
+
+### Hero
+Presenta la propuesta principal de Localy con una imagen representativa de Cartagena y un texto orientado a conversion.
+
+### Problem / Solution
+Explica la necesidad del usuario y cómo Localy resuelve ese problema mediante guías locales y experiencias auténticas.
+
+### Categories
+Muestra los tipos de experiencias disponibles, como gastronomía, arte, naturaleza y cultura.
+
+### Featured Experiences
+Destaca las experiencias más populares para captar interés del usuario.
+
+### Featured Guides
+Presenta a los guías locales más destacados y confiables.
+
+### How It Works
+Explica el flujo de uso desde explorar hasta vivir la experiencia.
+
+### Trust / Stats / Testimonials
+Refuerza la confianza con métricas, seguridad, testimonios y credibilidad.
+
+### CTAs
+Incluye acciones para que el usuario explore experiencias o se convierta en guía.
+
+---
+
+## 🎯 Objetivo del proyecto
+
+El objetivo de Localy es crear una experiencia turística más auténtica y humanizada, conectando viajeros con personas que conocen de verdad la ciudad, sus costumbres, secretos y cultura.
+
+La landing page busca posicionar la marca como una solución moderna, confiable y atractiva para quienes desean vivir Cartagena de una manera más real y significativa.
+
+---
+
+## 👨‍💻 Proyecto
+
+**Localy**  
+Plataforma turística para descubrir Cartagena como un local.
+
+Ubicación: Cartagena de Indias, Colombia
+
+---
+
+## 📄 Licencia
+
+Este proyecto fue desarrollado con fines de producto y presentación de marca.  
+Todos los derechos están reservados para Localy.
+
+---
+
+## 📝 Nota
+
+Este repositorio corresponde a la versión de landing page de Localy y está orientado a presentar la propuesta de valor de la marca en una experiencia visual moderna y profesional.
